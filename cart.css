@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Chela+One&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    background-color: black;
+    z-index: 1;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.fa-cart-shopping {
+    color: yellow;
+}
+
+#count {
+    padding-left: 10px;
+}
+
+body {
+    background-color: #0c192c;
+    font-family: 'Bree Serif', serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    /* grid-template-columns: 3fr 1fr; */
+    grid-gap: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+}
+
+.cart-product {
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+}
+
+.heading h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    color: yellow;
+}
+
+#root {
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    font-family: 'Bree Serif', serif;
+    overflow: auto;
+    /* background-color:black; */
+}
+
+
+@media (max-width:600px) {
+    #root {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.items-1 {
+    display: grid;
+    padding-bottom: 20px;
+    width: fit-content;
+}
+
+.product {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 6px 7px yellow;
+    border-radius: 23px;
+    width: 87%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.product:hover {
+    box-shadow: 0px 2px 6px 7px blue;
+    transition: 0.3s ease;
+    transform: scale(1.08);
+}
+
+.product img {
+    width: 300px;
+    opacity: 0.9;
+}
+
+.product:hover img {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+button {
+    width: auto;
+    cursor: pointer;
+    padding: 10px;
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    border: 2px solid red;
+    display: none;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.fa-trash {
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}
+
+.head p {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 700;
+    margin: 10px;
+    background-color: yellow;
+}
+
+.head span {
+    float: right;
+    font-size: 18px;
+
+}
+
+.foot {
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+#cartItem {
+    text-align: center;
+    margin: 10px;
+}
+
+.cart-item {
+    display: flex;
+}
+
+.prod-details {
+    border: 2px solid black;
+    width: 80%;
+    text-align: right;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
+
+.prod-details p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.prod-details h2 {
+    padding-bottom: 10px;
+}
+
+.prod-details span {
+    padding-bottom: 10px;
+}
+
+.prod-img {
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.prod-img img {
+    width: 100px;
+}

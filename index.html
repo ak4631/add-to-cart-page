@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Add To Cart Page</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="header">
+            <p class="LOGO">AK</p>
+            <p>Welcome</p>
+            <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping cart-Icon"></i></a><span
+                    id="count">0</span></div>
+        </div>
+    </div>
+    <section class="heading">
+        <h1>Products</h1>
+    </section>
+    <div class="container">
+        <div id="root">
+        </div>
+        <div class="sidebar">
+            <div class="head">
+                <p>MY CART<span><a href="#"><i class="fa-solid fa-x close-cart"></i></a></span></p>
+            </div>
+            <div id="cartItem">Your cart is Empty</div>
+            <hr style="width: 90%; color:blue;border: 1px solid black; margin:10px auto;">
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$0.00</h2>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+
+</html>
